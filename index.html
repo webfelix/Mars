@@ -1,0 +1,137 @@
+<!--
+ * @Description: 
+ * @Author: 熊伟
+ * @Date: 2019-08-14 09:22:19
+ * @LastEditTime: 2019-08-14 17:35:10
+ * @LastEditors: 熊伟
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+    <div class="section section-loading play">
+        <div class="logo-cont">
+            <img src="./img/loading/logo_left.png" class="logo-left">
+            <img src="./img/loading/logo_right.png" class="logo-right">
+        </div>
+        <div class="m-logo"><img src="./img/loading/m.png" width="165"></div>
+        <div class="process-cont">
+            <div class="process-bar">
+                <div class="process-percent"></div>
+            </div>
+        </div>
+        <div class="loading-process"><span class="percent">0</span>%</div>
+    </div>
+    <div class="section section-home">
+        <div class="kuang-cont">
+            <img src="./img/home/kuang.png" width="247">
+        </div>
+        <div class="buton-txt">
+            <div><img id="enter-subject" class="pulse" src="./img/home/button.jpg" width="312"></div>
+            <div style="margin-top: 10px;"><img src="./img/home/text.png" width="190"></div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject1">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">1. 我的专业背景是</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject1" class="subject-input">
+        <div class="option-list" sub="1">
+            <div class="option-item" val="A">A&nbsp;理工科</div>
+            <div class="option-item" val="B">B&nbsp;商科或文科</div>
+            <div class="option-item" val="C">C&nbsp;跨以上两大学科</div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject2">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">2. 生活中我最擅长</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject2" class="subject-input">
+        <div class="option-list" sub="2">
+            <div class="option-item" val="A">A&nbsp;创意迸发，脑海里每天都有新想法</div>
+            <div class="option-item" val="B">B&nbsp;与人沟通，迅速建立良好关系</div>
+            <div class="option-item" val="C">C&nbsp;钻研数据和技术，解决实际问题</div>
+            <div class="option-item" val="D">D&nbsp;制定计划，管理时间表，按时完成任务</div>
+            <div class="option-item" val="E">E&nbsp;组建团队，关注团队中每个人的情况</div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject3">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">3. 以下哪种最能让你获得成就感？</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject3" class="subject-input">
+        <div class="option-list" sub="3">
+            <div class="option-item" val="A">A&nbsp;不断达成和超越目标</div>
+            <div class="option-item" val="B">B&nbsp;帮助了别人，获得感谢</div>
+            <div class="option-item" val="C">C&nbsp;解决棘手的难题</div>
+            <div class="option-item" val="D">D&nbsp;在过往不了解的领域迅速学习和掌握新知识</div>
+            <div class="option-item" val="E">E&nbsp;带领团队取得成功</div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject4">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">4. 出去旅游的时候我发现一项运动很有意思，我会立刻</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject4" class="subject-input">
+        <div class="option-list" sub="4">
+            <div class="option-item" val="A">A&nbsp;买票试玩</div>
+            <div class="option-item" val="B">B&nbsp;观察别人怎么玩</div>
+            <div class="option-item" val="C">C&nbsp;看看就好，我学不会</div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject5">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">5. 我最喜欢的工作环境是</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject5" class="subject-input">
+        <div class="option-list" sub="5">
+            <div class="option-item" val="A">A&nbsp;同事之间平等友爱，互相支持</div>
+            <div class="option-item" val="B">B&nbsp;没有等级距离，讲究平等</div>
+            <div class="option-item" val="C">C&nbsp;充分信任和授权，高度自主性</div>
+            <div class="option-item" val="D">D&nbsp;以上都喜欢</div>
+        </div>
+    </div>
+    <div class="section section-subject" id="section-subject6">
+        <img src="./img/subject/3year.png" class="year" width="144">
+        <div class="subject-title">
+            <span class="subject-title__bg">
+                <span class="subject-title__cont">6. 对工作地点，我更想在</span>
+            </span>
+        </div>
+        <input type="hidden" id="subject6" class="subject-input">
+        <div class="option-list" sub="6">
+            <div class="option-item" val="A">A&nbsp;北京及周边地区</div>
+            <div class="option-item" val="B">B&nbsp;上海及周边地区</div>
+            <div class="option-item" val="C">C&nbsp;广州及周边地区</div>
+            <div class="option-item" val="D">D&nbsp;天大地大，哪里需要我就去哪里</div>
+        </div>
+    </div>
+<script type='text/javascript' src='./js/zepto.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/h5.js' charset='utf-8'></script>
+</div>
+</body>
+</html>
