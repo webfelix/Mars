@@ -37,7 +37,7 @@ $(function(){
             $('#subject'+indx).val(val);
             $('#section-subject'+indx).removeClass('play');
             if(indx == 6){
-
+                $('.section-result').addClass('play');
             }else{
                 $('#section-subject'+next).addClass('play');
             }
@@ -46,7 +46,7 @@ $(function(){
     }
 
     setTimeout(function(){
-        initLoadingPage();
+        // initLoadingPage();
     },500);
     
     initEvent()

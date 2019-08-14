@@ -53,6 +53,13 @@ html,body {
 .section-subject {
     background-image: url(../img/subject/bg.jpg);
 }
+.section-result {
+    background-image: url(../img/result/bg.jpg);
+}
+.section-share {
+    background-image: url(../img/transmit/bg.jpg);
+}
+
 
 /* 加载页样式 */
 .section-loading .logo-cont {
@@ -161,4 +168,78 @@ html,body {
         margin-bottom: 15px;
     }
 }
-  
+
+/*答题结果页样式*/
+.section-result .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.section-result .title2-cont {
+    margin-top: 20vh;
+    padding-right: 15px;
+    text-align: right;
+}
+.section-result .result1-cont {
+    margin-top: 30vh;
+    padding-left: 11vw;
+}
+.section-result .result2-cont {
+    margin-top: 3vh;
+    padding-right: 15px;
+    text-align: right;
+}
+.section-result .result {
+    display: inline-block;
+    width: 250px;
+    height: 48px;
+    text-align: left;
+    font-size: 24px;
+    padding-left: 17px;
+    padding-top: 9px;
+    background-size:100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.section-result .result1 {
+    background-image: url(../img/result/word_bg_green.png);
+}
+.section-result .result2 {
+    background-image: url(../img/result/word_bg_yellow.png);
+}
+.section-result .tips {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 80%;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    font-size: 12px;
+}
+/*答题结果页样式END*/
+
+/*转发分享页面*/
+.section-share .share-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.section-share .mars-logo {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}    
+.section-share .share-cont {
+    margin-top: 16vh;
+    text-align: center;
+}
+.section-share .share-cont img {
+    width: 88%;
+}
+.section-share .reanswer {
+    margin-top: -45px;
+    text-align: center;
+}
