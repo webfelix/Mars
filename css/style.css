@@ -134,6 +134,7 @@ html,body {
     text-align: left;
     color: rgb(0, 0, 159);
     font-size: 18px;
+    font-weight: bold;
 }
 .section-subject .option-list {
     margin-top: 5vh;
@@ -175,19 +176,22 @@ html,body {
     top: 10px;
     right: 10px;
 }
-.section-result .title2-cont {
-    margin-top: 20vh;
-    padding-right: 15px;
+.section-result .tit1-cont {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.section-result .tit2-cont {
+    margin-top: 12vh;
     text-align: right;
+    padding-right: 20px;
 }
 .section-result .result1-cont {
-    margin-top: 30vh;
-    padding-left: 11vw;
+    margin-top: 11vh;
+    text-align: center;
 }
 .section-result .result2-cont {
-    margin-top: 3vh;
-    padding-right: 15px;
-    text-align: right;
+    margin-top: 5vh;
+    text-align: center;
 }
 .section-result .result {
     display: inline-block;
@@ -200,6 +204,8 @@ html,body {
     background-size:100%; 
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(28, 28, 170);
+    font-weight: bold;
 }
 .section-result .result1 {
     background-image: url(../img/result/word_bg_green.png);
@@ -209,31 +215,36 @@ html,body {
 }
 .section-result .tips {
     position: absolute;
-    bottom: 20px;
+    bottom: 17px;
     left: 20px;
     width: 80%;
-    line-height: 20px;
-    padding: 10px;
+    padding: 9px;
     border-radius: 5px;
     background-color: blue;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
+    color: rgb(0, 214, 184);
+    line-height: 1.375;
 }
 /*答题结果页样式END*/
 
 /*转发分享页面*/
 .section-share .share-img {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 12px;
+    right: 12px;
 }
 .section-share .mars-logo {
     position: absolute;
     bottom: 10px;
     right: 10px;
 }    
+.section-share .tit-cont {
+    margin-top: 15vh;
+    text-align: center;
+}
 .section-share .share-cont {
-    margin-top: 16vh;
+    margin-top: 3vh;
     text-align: center;
 }
 .section-share .share-cont img {
@@ -243,3 +254,4 @@ html,body {
     margin-top: -45px;
     text-align: center;
 }
+/*转发分享页面END*/

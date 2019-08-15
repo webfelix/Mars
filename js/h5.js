@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 熊伟
  * @Date: 2019-08-14 09:21:12
- * @LastEditTime: 2019-08-14 17:39:41
+ * @LastEditTime: 2019-08-15 15:14:00
  * @LastEditors: 熊伟
  */
 $(function(){
@@ -46,7 +46,7 @@ $(function(){
     }
 
     setTimeout(function(){
-        // initLoadingPage();
+        initLoadingPage();
     },500);
     
     initEvent()
