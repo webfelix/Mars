@@ -177,7 +177,7 @@ html,body {
     right: 10px;
 }
 .section-result .tit1-cont {
-    margin-top: 20px;
+    margin-top: 30px;
     padding-left: 20px;
 }
 .section-result .tit2-cont {
@@ -186,22 +186,22 @@ html,body {
     padding-right: 20px;
 }
 .section-result .result1-cont {
-    margin-top: 11vh;
+    margin-top: 9vh;
     text-align: center;
 }
 .section-result .result2-cont {
-    margin-top: 5vh;
+    margin-top: 3vh;
     text-align: center;
 }
 .section-result .result {
     display: inline-block;
-    width: 250px;
-    height: 48px;
-    text-align: left;
-    font-size: 24px;
-    padding-left: 17px;
+    width: 260px;
+    height: 42px;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 38px;
     padding-top: 9px;
-    background-size:100%; 
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(28, 28, 170);
@@ -213,11 +213,16 @@ html,body {
 .section-result .result2 {
     background-image: url(../img/result/word_bg_yellow.png);
 }
+.section-result .has-job {
+    margin-top: 30px;
+}
+.section-result .no-job {
+    margin-top: 30px;
+    display: none;
+}
 .section-result .tips {
-    position: absolute;
-    bottom: 17px;
-    left: 20px;
     width: 80%;
+    margin: 25px auto 0;
     padding: 9px;
     border-radius: 5px;
     background-color: blue;
@@ -225,6 +230,31 @@ html,body {
     font-size: 13px;
     color: rgb(0, 214, 184);
     line-height: 1.375;
+}
+.section-result .show-share-cont {
+    margin-top: 25px;
+    text-align: center;
+}
+@media screen and (max-width: 320px) {
+    .section-result .tit1-cont {
+        margin-top: 20px;
+    }
+    .section-result .result1-cont {
+        margin-top: 5vh;
+    }
+    .section-result .has-job {
+        margin-top: 20px;
+    }
+    .section-result .result2-cont {
+        margin-top: 2vh;
+    }
+    .section-result .tips {
+        width: 85%;
+        margin: 15px auto 0;
+    }
+    .section-result .show-share-cont {
+        margin-top: 20px;
+    }
 }
 /*答题结果页样式END*/
 
