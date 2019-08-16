@@ -198,9 +198,9 @@ html,body {
     width: 260px;
     height: 42px;
     text-align: center;
-    font-size: 20px;
+    font-size: 21px;
     padding-left: 38px;
-    padding-top: 9px;
+    padding-top: 7px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -223,7 +223,7 @@ html,body {
 .section-result .tips {
     width: 80%;
     margin: 25px auto 0;
-    padding: 9px;
+    padding: 8px 9px;
     border-radius: 5px;
     background-color: blue;
     color: #fff;
