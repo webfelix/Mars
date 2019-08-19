@@ -152,6 +152,12 @@ html,body {
     background-image: -webkit-linear-gradient( 90deg, rgb(6,182,177) 0%, rgb(16,217,189) 79%, rgb(222,255,254) 93%, rgb(0,214,184) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(6,182,177) 0%, rgb(16,217,189) 79%, rgb(222,255,254) 93%, rgb(0,214,184) 100%);
 }
+.section-subject .option-list .option-item:active,
+.section-subject .option-list .option-item:visited {
+    background-image: -moz-linear-gradient( 90deg, rgb(0, 179, 173) 0%, rgb(22, 191, 168) 79%, rgb(0, 212, 205) 93%, rgb(30, 162, 144) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(0, 179, 173) 0%, rgb(22, 191, 168) 79%, rgb(0, 212, 205) 93%, rgb(30, 162, 144) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(0, 179, 173) 0%, rgb(22, 191, 168) 79%, rgb(0, 212, 205) 93%, rgb(30, 162, 144) 100%);
+}
 #section-subject2 .option-list .option-item {
     margin-bottom: 20px;
 }
@@ -186,7 +192,7 @@ html,body {
     padding-right: 20px;
 }
 .section-result .result1-cont {
-    margin-top: 9vh;
+    margin-top: 8vh;
     text-align: center;
 }
 .section-result .result2-cont {
@@ -195,12 +201,12 @@ html,body {
 }
 .section-result .result {
     display: inline-block;
-    width: 260px;
+    width: 90%;
     height: 42px;
+    line-height: 43px;
     text-align: center;
-    font-size: 21px;
+    font-size: 5.6vw;
     padding-left: 38px;
-    padding-top: 7px;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -208,6 +214,7 @@ html,body {
     font-weight: bold;
 }
 .section-result .result1 {
+    width: 72%;
     background-image: url(../img/result/word_bg_green.png);
 }
 .section-result .result2 {
@@ -222,7 +229,7 @@ html,body {
 }
 .section-result .tips {
     width: 80%;
-    margin: 25px auto 0;
+    margin: 20px auto 0;
     padding: 8px 9px;
     border-radius: 5px;
     background-color: blue;
@@ -232,8 +239,10 @@ html,body {
     line-height: 1.375;
 }
 .section-result .show-share-cont {
-    margin-top: 25px;
     text-align: center;
+    position: absolute;
+    bottom: 2vh;
+    width: 100%;
 }
 @media screen and (max-width: 320px) {
     .section-result .tit1-cont {

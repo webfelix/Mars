@@ -2,7 +2,7 @@
  * @Description: 
  * @Author: 熊伟
  * @Date: 2019-08-14 09:21:12
- * @LastEditTime: 2019-08-15 15:14:00
+ * @LastEditTime: 2019-08-19 14:05:36
  * @LastEditors: 熊伟
  */
 $(function(){
@@ -48,18 +48,41 @@ $(function(){
         }
 
         // 判断 志愿二：职能管培通道
-        if(answ1 == 'A' && (answ2 == 'A' || answ3 == 'D')){
-            res2Txt = '研发管理培训生项目';
-        }else if(answ1 == 'A' && (answ2 == 'C' || answ3 == 'C')){
-            res2Txt = '供应管理培训生项目';
-        }else if(answ6 == 'C' || answ6 == 'B'){
-            res2Txt = '供应链方向';
-        }else if(answ3 == 'A' || answ6 == 'D'){
-            res2Txt = '供应链方向';
+        /**
+        * 第一题选了A - 研发和供应制造里面，第二题选A - 研发，选C-制造，
+        * 如果没中，看第三题，选A-研发，选C-制造，如果都没选到，那就任意通道都符合
+        */
+        /**
+         * 第一题没选A，第二题选D-销售，选B-供应链，如果没选中，
+         * 第三题选A-销售，再没选中，第六题B和C - 供应，A和D-销售
+         */
+        if(answ1 == 'A'){
+            if(answ2 == 'A'){
+                res2Txt = '研发管理培训生项目';
+            }else if(answ2 == 'C'){
+                res2Txt = '供应培训生-供应制造方向';
+            }else if(answ3 == 'A'){
+                res2Txt = '研发管理培训生项目';
+            }else if(answ3 == 'C'){
+                res2Txt = '供应培训生-供应制造方向';
+            }else{
+                $('.section-result .has-job').hide();
+                $('.section-result .no-job').show();
+            }
         }else{
-            $('.section-result .has-job').hide();
-            $('.section-result .no-job').show();
+            if(answ2 == 'D'){
+                res2Txt = '销售管理培训生项目';
+            }else if(answ2 == 'B'){
+                res2Txt = '供应培训生-供应链方向';
+            }else if(answ3 == 'A'){
+                res2Txt = '销售管理培训生项目';
+            }else if(answ6 == 'B' || answ6 == 'C'){
+                res2Txt = '供应培训生-供应链方向';
+            }else if(answ6 == 'A' || answ6 == 'D'){
+                res2Txt = '销售管理培训生项目';
+            }
         }
+
         $('.section-result .result1').text(res1Txt);
         $('.section-result .result2').text(res2Txt);
     }
@@ -73,6 +96,10 @@ $(function(){
         $('.section-subject .option-item').click(function(){
             var val = $(this).attr('val');
             var indx = Number($(this).parent('.option-list').attr('sub'));
+            if(indx == 4 && val == 'C'){
+                $.toast('玛氏的管理培训生项目要求候选人敢于挑战自己，把不可能变成可能，所以千万不要在问题面前气馁哦，再想想。');
+                return false;
+            }
             var next = indx + 1;
             $('#subject'+indx).val(val);
             $('#section-subject'+indx).removeClass('play');
@@ -101,3 +128,37 @@ $(function(){
     
     initEvent()
 })
+$.toast = function(msg, duration) {
+    $('<div class="toast-modal"><div class="toast">' + msg + '</div></div>').appendTo(document.body);
+    $('.toast-modal').css({
+		'position': 'fixed',
+        'left':'0',
+        'right':'0',
+        'top':'0',
+        'bottom':'0'
+	});
+	$('.toast').css({
+		'position': 'absolute',
+        'display': 'inline-block',
+        'min-width': '100px',
+		'background': 'rgba(0, 0, 0, 0.6)',
+		'color':'white',
+		'padding': '14px 25px',
+		'line-height': '24px',
+		'font-size': '16px',
+		'width': '75%',
+		'z-index': 11000,
+		'left': '50%',
+		'margin-top': 0,
+		'top': '50%',
+        'text-align': 'justify',
+        'border-radius': '2px',
+        'word-break': 'break-all',
+        'overflow': 'hidden',
+		'-webkit-transform': 'translate(-50%, -50%)',
+		'transform': 'translate(-50%, -50%)'
+	});
+	setTimeout(function() {
+		$('.toast-modal').remove();
+	}, duration || 4000);
+};
