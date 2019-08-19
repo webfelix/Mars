@@ -76,10 +76,15 @@ $(function(){
                 res2Txt = '供应培训生-供应链方向';
             }else if(answ3 == 'A'){
                 res2Txt = '销售管理培训生项目';
+            }else if(answ3 == 'C'){
+                res2Txt = '供应培训生-供应链方向';
             }else if(answ6 == 'B' || answ6 == 'C'){
                 res2Txt = '供应培训生-供应链方向';
             }else if(answ6 == 'A' || answ6 == 'D'){
                 res2Txt = '销售管理培训生项目';
+            }else{
+                $('.section-result .has-job').hide();
+                $('.section-result .no-job').show();
             }
         }
 
@@ -116,7 +121,7 @@ $(function(){
         });
         $('#reset-section').click(function(){
             $('.subject-input').val('');
-            $('.section-share').removeClass('play');
+            $('.section-result').removeClass('play');
             $('#section-subject1').addClass('play');
         });
 

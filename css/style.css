@@ -244,6 +244,9 @@ html,body {
     bottom: 2vh;
     width: 100%;
 }
+.section-result .show-share-cont img{
+    width: 43%;
+}
 @media screen and (max-width: 320px) {
     .section-result .tit1-cont {
         margin-top: 20px;
