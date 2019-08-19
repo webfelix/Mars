@@ -183,16 +183,17 @@ html,body {
     right: 10px;
 }
 .section-result .tit1-cont {
-    margin-top: 30px;
+    margin-top: 7vh;
     padding-left: 20px;
 }
 .section-result .tit2-cont {
-    margin-top: 12vh;
+    margin-top: 10.5vh;
     text-align: right;
     padding-right: 20px;
 }
 .section-result .result1-cont {
-    margin-top: 8vh;
+    margin-top: 7vh;
+    padding-right: 8vw;
     text-align: center;
 }
 .section-result .result2-cont {
@@ -203,7 +204,7 @@ html,body {
     display: inline-block;
     width: 90%;
     height: 42px;
-    line-height: 43px;
+    line-height: 42px;
     text-align: center;
     font-size: 5.6vw;
     padding-left: 38px;
@@ -214,7 +215,6 @@ html,body {
     font-weight: bold;
 }
 .section-result .result1 {
-    width: 72%;
     background-image: url(../img/result/word_bg_green.png);
 }
 .section-result .result2 {
